@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+	<!--标题-->
+	<meta charset="utf-8">
+	<title>Movie Data Visualizaion</title>
+	<!--css库-->
+	<link rel="stylesheet" href="libs/bootstrap-dist/css/bootstrap.min.css">
+	<!--css样式表文件-->
+	<link rel="stylesheet/less" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/scatter-plot.css">
+	<link rel="stylesheet" type="text/css" href="css/movie-histogram.css">
+	<link rel="stylesheet" type="text/css" href="css/node-link.css">
+</head>
+<style>
+
+form {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+label {
+  display: block;
+}
+
+p {
+	font: 20px sans-serif;
+}
+
+</style>
+<body>
+	<!--填充主体的内容-->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Movie Data Visualization</a>
+	    </div>
+	    <p class="navbar-text navbar-right">Peking University</p>
+	  </div>
+	</nav>
+	<div id="vis-div">
+		<div id = "scatter-plot">
+			<div id = "scatter-plot1" >
+				<div id = "scatter-plot1-text">
+					<p id = "scatter-plot1-text">Film Distribution in quality</p>
+				</div>
+				<div id = "scatter-plot1-svg" >
+				</div>
+				<div id = "scatter-select">
+					<form name="form1" >
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Award ：&nbsp
+						<input type="checkbox" id="checkbox0" value="0" >&nbsp 0 &nbsp &nbsp
+						<input type="checkbox" id="checkbox1" value="1" >&nbsp 1 &nbsp &nbsp
+						<input type="checkbox" id="checkbox2" value="2" >&nbsp 2 &nbsp &nbsp
+						<input type="checkbox" id="checkbox3" value="3" >&nbsp 3 &nbsp &nbsp
+						<input type="checkbox" id="checkbox4" value="4" >&nbsp 4 &nbsp &nbsp
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "histogram">
+			<div id = "movie-histogram">
+				<div id = "movie-histogram-text">
+					<p id = "movie-histogram-text">Film Distribution in time</p>
+				</div>
+				<div id = "movie-histogram-svg">
+				</div>
+			</div>
+		</div>
+		
+		<div id = "mynode_link">
+    		<div id = "node_link">
+      			<div id = "node_link-text">
+        			<!--<p id = "node_link-text">Node Link</p>-->
+      			</div>
+				<div id = "node_link-svg1">
+				</div>
+				<div id = "node_link-svg2">
+				</div>
+      	</div>
+    </div>
+	<!--加载用到的js库-->
+	<script type="text/javascript" src="libs/d3-dist/d3.v4.js"></script>
+	<!--<script src="https://d3js.org/d3.v4.min.js"></script>>
+	<!--<script type="text/javascript" src="libs/d3-dist/d3v3.js"></script>-->
+	<script type="text/javascript" src="libs/jquery-dist/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/less-dist/less.min.js"></script>
+	<script type="text/javascript" src="scripts/scatter-plot.js"></script>
+	<script type="text/javascript" src="scripts/movie-histogram.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/node-link.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>

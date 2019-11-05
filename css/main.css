@@ -1,0 +1,122 @@
+body {
+  font: 15px sans-serif;
+}
+#scatter-plot{
+	position: absolute;
+	top: 10%;
+	bottom: 40%;
+	left: 0%;
+	right: 50%;
+	padding: 10px 10px 10px 10px;
+}
+#scatter-plot1{
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	right: 0%;
+	left: 0%; 
+}
+#scatter-plot1-text{
+	position: absolute;
+	top:0%;
+	bottom: 90%;
+	right: 0%;
+	left: 0%; 
+	font-size: 15px;
+	padding-top: 5px;
+	text-align: center;
+}
+#scatter-plot1-svg{
+	position: absolute;
+	top:10%;
+	bottom: 10%;
+	right: 0%;
+	left: 0%; 
+}
+#scatter-select{
+	position: absolute;
+	top:90%;
+	bottom: 0%;
+	right: 0%;
+	left: 0%; 
+}
+#histogram{
+	position: absolute;
+	top: 10%;
+	bottom: 40%;
+	left: 50%;
+	right: 0%;
+}
+#movie-histogram{
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	right: 0%;
+	left: 0%;
+	border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: gray;
+}
+#movie-histogram-text{
+	position: absolute;
+	top:0%;
+	bottom: 90%;
+	right: 0%;
+	left: 0%;
+	font-size: 15px; 
+	padding-top: 5px;
+	text-align: center;
+}
+#movie-histogram-svg{
+	position: absolute;
+	top:10%;
+	bottom: 10%;
+	right: 0%;
+	left: 0%; 
+}
+#mynode_link{
+	position: absolute;
+	top: 60%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	padding: 10px 10px 10px 10px;
+}
+#node_link{
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	right: 0%;
+	left: 0%; 
+}
+#node_link-text{
+	position: absolute;
+	top:0%;
+	bottom: 90%;
+	right: 0%;
+	left: 0%; 
+	font-size: 15px;
+	padding-top: 5px;
+	text-align: center;
+}
+#node_link-svg1{
+	position: absolute;
+	top:10%;
+	bottom: 0%;
+	right: 50%;
+	left: 0%; 
+}
+#node_link-svg2{
+	position: absolute;
+	top:10%;
+	bottom: 0%;
+	right: 0%;
+	left: 50%; 
+}
+#input-div{
+    position: absolute;
+	top: 10%;
+	bottom: 38%;
+	left: 85%;
+	right: 3%;
+}
