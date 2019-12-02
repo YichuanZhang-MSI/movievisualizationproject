@@ -8,24 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/movie-histogram.css">
 	<link rel="stylesheet" type="text/css" href="css/node-link.css">
 </head>
-<style>
 
-form {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
-
-label {
-  display: block;
-}
-
-p {
-	font: 20px sans-serif;
-}
-
-</style>
 <body>
 	<!--填充主体的内容-->
 	<nav class="navbar navbar-inverse">
@@ -33,20 +16,21 @@ p {
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="#">Movie Data Visualization</a>
 	    </div>
-	    <p class="navbar-text navbar-right">Peking University</p>
+	    <p class="navbar-text navbar-right">SI 539</p>
 	  </div>
 	</nav>
 	<div id="vis-div">
 		<div id = "scatter-plot">
 			<div id = "scatter-plot1" >
 				<div id = "scatter-plot1-text">
-					<p id = "scatter-plot1-text">Film Distribution in quality</p>
+					<p id = "scatter-plot1-text">Film Distribution in Quality</p>
 				</div>
 				<div id = "scatter-plot1-svg" >
 				</div>
 				<div id = "scatter-select">
 					<form name="form1" >
 						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Award ：&nbsp
+						<!-- Award: -->
 						<input type="checkbox" id="checkbox0" value="0" >&nbsp 0 &nbsp &nbsp
 						<input type="checkbox" id="checkbox1" value="1" >&nbsp 1 &nbsp &nbsp
 						<input type="checkbox" id="checkbox2" value="2" >&nbsp 2 &nbsp &nbsp
@@ -60,7 +44,7 @@ p {
 		<div id = "histogram">
 			<div id = "movie-histogram">
 				<div id = "movie-histogram-text">
-					<p id = "movie-histogram-text">Film Distribution in time</p>
+					<p id = "movie-histogram-text">Film Distribution in Time</p>
 				</div>
 				<div id = "movie-histogram-svg">
 				</div>
@@ -78,7 +62,7 @@ p {
 				</div>
       	</div>
     </div>
-	<!--加载用到的js库-->
+	<!--JS Library-->
 	<script type="text/javascript" src="libs/d3-dist/d3.v4.js"></script>
 	<script type="text/javascript" src="libs/jquery-dist/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/less-dist/less.min.js"></script>

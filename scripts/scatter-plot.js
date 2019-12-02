@@ -37,7 +37,7 @@ var scatter_plot = {
 			    if(d.award==0)
 				{
 					d.power=0;
-					d.award="无";
+					d.award="None";
 				}
 				else
 				{
@@ -185,10 +185,10 @@ var scatter_plot = {
 					tooltip.transition()
 						.duration(200)
 						.style("opacity",0.85);
-					tooltip.html("title: 《"+d.title+"》<br/>"
+					tooltip.html("title: "+"《"+d.title+"》<br/>"
 									+"rate: "+d.rate+"<br/>"
-									+"box office: "+d['box office']+"万<br/>"
-									+"showtime: "+d['showtime']+"年<br/>"
+									+"box office: "+d['box office']+"million<br/>"
+									+"showtime: "+d['showtime']+"<br/>"
 									+"award: "+d['award'])
 						.style("left",(d3.event.pageX-60)+"px")
 						.style("top", (d3.event.pageY + 20) + "px"); 

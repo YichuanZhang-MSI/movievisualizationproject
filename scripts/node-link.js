@@ -298,23 +298,6 @@ var node_link = {
 				      .attr("transform",function(d){return "translate(" + d.x + ", " + d.y + ")";});
 				}
 
-				// function color(d) {
-				// 	if(!d.color){ 
-				// 		return "#9999ff"; // terminal node
-				// 	}else if(d._children){
-				// 		return "#4050ff"; // collapsed node
-				// 	}else{
-				// 		if(d.color==1){
-				// 			return "#e77471"; // central node
-				// 		}else if(d.color==2){
-				// 			return "#0088ff"; // first tier node
-				// 		}
-				// 		// else{
-				// 		// 	return "#66aadd" // second tier node
-				// 		// }
-				// 	}
-				// }
-
 
 				// Toggle children on click.
 				function click(d){
@@ -412,114 +395,6 @@ var node_link = {
 				var temp=d3.select("body").append("div")
 					.attr("class","tooltip")
 					.style("opacity",0);
-				
-				// d3.select("#diresvg").remove();
-
-				// var it;
-				// for(it=0;it<directors.length;it++){
-				// 	var svgdirector = d3.select("#node_link-svg").append("svg")
-				// 			.attr("id","diresvg")
-				// 			.attr("width", width)
-				// 			.attr("height", height);
-
-				// 	svgdirector.append("g")
-				// 		.attr("class","links")
-				// 		.selectAll("line")
-				// 		.data(DirectorGraphJSONArray[it].links)
-				// 		.enter()
-				// 		.append("line")
-				// 			.attr("x1",width/2)
-				// 			.attr("y1",height/2)
-				// 			.attr("x2",function(d,j){
-				// 				return width/2+r*Math.sin(2*Math.PI*j/DirectorGraphJSONArray[it].links.length);
-				// 			})
-				// 			.attr("y2",function(d,j){
-				// 				return height/2+r*Math.cos(2*Math.PI*j/DirectorGraphJSONArray[it].links.length);
-				// 			})
-				// 			.attr("stroke","#999")
-				// 			.attr("stroke-width",function(d){return 2*d.width;});
-
-				// 	svgdirector.append("g")
-				// 		.attr("class","nodes")
-				// 		.selectAll("circle")
-				// 		.data(DirectorGraphJSONArray[it].nodes)
-				// 		.enter()
-				// 		.append("circle")
-				// 			//.attr("r",function(d){return d.power;})
-				// 			.attr("r",function(d){
-				// 				return comparepower(d.power);
-				// 			})
-				// 			.attr("cx",function(d,j){
-				// 				//if(d.clas==1) return width/2;
-				// 				if(j==0) return width/2;
-				// 				else return width/2+r*Math.sin(2*Math.PI*(j-1)/DirectorGraphJSONArray[it].links.length);
-				// 			})
-				// 			.attr("cy",function(d,j){
-				// 				//if(d.clas==1) return height/2;
-				// 				if(j==0) return height/2;
-				// 				else{
-				// 					//var t=height/2+r*Math.cos(2*Math.PI*(j-1)/DirectorGraphJSON.links.length);
-				// 					return height/2+r*Math.cos(2*Math.PI*(j-1)/DirectorGraphJSONArray[it].links.length);
-				// 				}
-				// 			})
-				// 			.attr("fill",function(d){
-				// 				if(d.clas==1) return "#7D9EC0";
-				// 				//if(d3.select(this).cx==width/2) return "#7D9EC0";
-				// 				else return "#698B22";
-				// 			})
-				// 		.on("mouseover",function(d){
-				// 			temp.transition()
-				// 			    .duration(200)
-				// 			    .style("opacity",1);
-				// 			temp.html("姓名: "+d.name)
-				// 			    .style("left",(d3.event.pageX-60)+"px")
-				// 			    .style("top", (d3.event.pageY + 20) + "px");
-				// 			d3.select("#node_link-svg").selectAll("svg")
-				// 				.selectAll("circle")
-				// 				.filter(function(o){
-				// 					if(o.name==d.name) return true;
-				// 					else return false;
-				// 				})
-				// 				.style("stroke-width",3)
-				// 				.style("stroke","#800000")
-
-				// 		})
-				// 		.on("mouseout",function(d){
-				// 			temp.transition()
-				// 			    .duration(500)
-				// 			    .style("opacity",0);
-				// 			d3.select("#node_link-svg").selectAll("svg")
-				// 				.selectAll("circle")
-				// 				.filter(function(o){
-				// 					if(o.name==d.name) return true;
-				// 					else return false;
-				// 				})
-				// 				.style("stroke-width",0)
-				// 		})
-				// 		.on("click",function(d){
-				// 			personName=d.name;
-				// 			d3.selectAll('.dot')
-				// 				.classed('circle-hidden', false);
-				// 			d3.selectAll('.dot')
-				// 				.filter(function(o,i){
-				// 					var directorList=o.director.split(' / ');
-				// 					var actorList=o.actor.split('/');
-				// 					for(var i=0;i<directorList.length;i++)
-				// 					{
-				// 						if(directorList[i]==personName)
-				// 							return false;
-				// 					}
-				// 					for(var i=0;i<actorList.length;i++)
-				// 					{
-				// 						if(actorList[i]==personName)
-				// 							return false;
-				// 					}
-									
-				// 					return true;
-				// 				})
-				// 				.classed('circle-hidden', true);
-				// 		});
-				// }
 				
 				
 
