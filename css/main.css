@@ -1,5 +1,6 @@
 body {
-  font: 15px sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
 }
 
 form {
@@ -70,9 +71,9 @@ p {
 	bottom: 0%;
 	right: 0%;
 	left: 0%;
-	border-right-style: solid;
+	/*border-right-style: solid;
     border-right-width: 1px;
-    border-right-color: gray;
+    border-right-color: gray;*/
 }
 #movie-histogram-text{
 	position: absolute;
@@ -130,10 +131,10 @@ p {
 	right: 0%;
 	left: 50%; 
 }
-#input-div{
+/*#input-div{
     position: absolute;
 	top: 10%;
 	bottom: 38%;
 	left: 85%;
 	right: 3%;
-}
+}*/

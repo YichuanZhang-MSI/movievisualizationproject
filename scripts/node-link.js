@@ -388,7 +388,7 @@ var node_link = {
 				  return nodes;
 				}
 
-				/////////////////////////画完力导向图//////////////////////
+				/////////////////////////done drawing the force layout//////////////////////
 
 				var r=50;
 
@@ -474,7 +474,7 @@ var node_link = {
 								.style("stroke-width",3)
 								.style("stroke","#800000");
 
-							/////////与node_link-svg1的交互/////////
+							/////////interaction with node_link-svg1/////////
 							d3.select("#node_link-svg1")
 								.selectAll("circle")
 								.filter(function(o){
@@ -483,7 +483,7 @@ var node_link = {
 								})
 								.style("stroke","#800000")
 								.style("stroke-width",3);
-							/////////完成与node_link-svg1的交互//////////
+							/////////finish interaction with node_link-svg1//////////
 						})
 						.on("mouseout",function(d){
 							temp.transition()

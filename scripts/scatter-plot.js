@@ -135,7 +135,7 @@ var scatter_plot = {
 
 			var yAxis = d3.axisLeft(y);
 			
-			//x轴
+			//x axis
             g1.append("g")
                .attr("class", "x axis")
                .attr("transform", "translate(0," + height + ")")
