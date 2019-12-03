@@ -134,7 +134,7 @@ var node_link = {
 				}
 				//console.log(linknum);
 
-				////////////////////////////开始画图///////////////////////
+				////////////////////////////drawing start///////////////////////
 
 				var it;
 				//var width0=$('#node_link-svg1').width();
@@ -154,7 +154,7 @@ var node_link = {
 						.attr("x",width0/2)
 						.attr("y",25)
 						.style("font","15px KaiTi")
-						.text("导演： "+file[num].director);
+						.text("Director： "+file[num].director);
 						
 				var link=svgdirector.selectAll(".link");
 				var node=svgdirector.selectAll(".node");
@@ -497,7 +497,7 @@ var node_link = {
 								})
 								.style("stroke-width",0);
 
-							/////////与node_link-svg1的交互/////////
+							/////////interaction with node_link-svg1/////////
 							d3.select("#node_link-svg1")
 								.selectAll("circle")
 								.filter(function(o){
@@ -505,7 +505,7 @@ var node_link = {
 									else return false;
 								})
 								.style("stroke-width",0);
-							/////////完成与node_link-svg1的交互//////////
+							/////////finish interaction with node_link-svg1//////////
 						})
 						.on("click",function(d){
 							personName=d.name;

@@ -187,7 +187,7 @@ var scatter_plot = {
 						.style("opacity",0.85);
 					tooltip.html("title: "+"《"+d.title+"》<br/>"
 									+"rate: "+d.rate+"<br/>"
-									+"box office: "+d['box office']+"million<br/>"
+									+"box office: "+d['box office']+" million<br/>"
 									+"showtime: "+d['showtime']+"<br/>"
 									+"award: "+d['award'])
 						.style("left",(d3.event.pageX-60)+"px")
