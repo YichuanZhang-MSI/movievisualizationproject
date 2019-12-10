@@ -171,7 +171,7 @@ var movie_histogram = {
 				.attr("height", function(d) { return y(d[0]) - y(d[1]); });
 			
 			var yAxis = d3.axisRight(y);		
-			//y轴
+			//y axis
             g1.append("g")
                .attr("class", "y axis")
 			   .attr("transform", "translate("+ (width) +"," + 0 +")")

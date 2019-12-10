@@ -139,7 +139,7 @@ var node_link = {
 				var it;
 				//var width0=$('#node_link-svg1').width();
 				//var height0=$('#node_link-svg1').height();
-				var width0=950;
+				var width0=600;//950;
 				var height0=600;
 				
 				d3.selectAll("#diresvg").remove();
